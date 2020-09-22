@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+</HEAD>
+
+<BODY bgcolor=#999900>
+<marquee direction=up bgcolor=#FFCC66 width=430 height=150 bgcolor=red scrollamount=2>
+<p><h4><center><u>INTRODUCTION</u></center></h4>
+<font size=2 color=#003300>
+This is a complete example of 3 Tier application.Before i tell you about this application i would like to clear you about the 3 Tier application.<BR><br>
+Generally there are 3 types of Tier applications.<br><br>
+<b><u>2 Tier application  :</u></b>&nbsp;&nbsp; When we use normal type database programming eg:- (storing the record through VB to any    
+ database) that is called client/server programming in which VB is client and Server is any database. In this type of application VB (client) is 1 Tier and database (server) is 2 Tier.Client directly intract with the server and send his request directly to server. All the validation exists in the client application.<br><br>
+
+ <b><u>3 Tier application  :</u></b>&nbsp;&nbsp;These kind of application are advance type client/server application.In 3 Tier application client is not intract with the database but the third layer intract with the database. <br><br>
+ 
+ In 2 Tier application there are 2 layers<br><br>
+<ul>
+<li> 1) User Layer (Client - VB)</li>
+<li> 2) Data Layer (Database - Any)</li>
+</ul>
+
+
+ In 3 Tier application there are 3 layers<br><br>
+<ul>
+<li>User Layer (Client - VB)</li>
+<li> Business Layer (Middleware - COM/COM+)</li>
+<li> Data Layer (Database - Any)</li>
+</ul>
+
+3 Tier application can be made with COM technolgy.In these type of application all the database part eg:- adding updaing,deleteing, fetching,etc plus business related data eg:- person contact,name,fax etc are inside the bussiness layer .
+This business layer application intract with the database and client intract with the business layer . there is no database coding in the client side. One advantage of three Tier of application is this that you can reuse that business layer in any other programming language eg:- ASP,VC++,C++ etc. In this quiz application example i have use this com (business layer) in ASP also.<br><Br>
+
+ <b><u>N Tier application  :</u></b>&nbsp;&nbsp;
+ In this kind of application there are lot of middleware between user and data layer.<br><br>
+
+ Ok now lets talk about this application.This quiz master application  is made on three Tier application in which User Layer is VB, Business Layer is COM and Data Layer is ACCESS database. when you will see the source code of VB client you will see that there is no database programming. the thing you will see that only accessing the com method,properties and functions in whole source code.<br><br>
+ 
+ <b>Some features you will see in this application :-</b> <br><br>
+
+<ul>
+<li>All the questions are generated randomly</li>
+<li>Result Checking (correct answer checking) at the end of quiz</li>
+<li>Remaing Questions</li>
+<li>Previous/current Max,Min and Avg score in the test</li>
+<li>Total correct and wrong answer given by you in the test</li>
+</ul>
+
+ <b>Advantage in the application-</b> <br><br>
+<ul>
+<li>You can add n number of questions in the database.</li>
+<li>Right now each question contain 10 marks. if you want to change the mark of one question or if you increase the questions in database then you have to update the following functions and methods in ActiveX DLL (COM) source. </li>
+<li>GetResult function and [ select case 1 'marks ] to update one question mark</li>
+<li>GetResult function and [ If Total <= 40 all range ]</li>
+<li>Form_Load event of Result form and  " Out Of 100" word </li>
+<li>You can use Quiz.Dll com component in any other programming . I have use this quiz.dll in ASP also and this file is inside ASP folder</li>
+</ul>
+
+ <b>New things you will see in com</b> <br><br>
+<ul>
+<li>New type of array (in one array all questions,correct answer,wrong answer are store)</li>
+<li>Almost all coding in com is done through this array</li>
+<li>Fetching the records from database using the AbsolutePosition property not form open method</li>
+</ul>
+
+<font size=2 color=blue><b>For Your Convinence I Am Also Sending The COM Source Code So That You Can Understand What Going On Business Layer.</b></font><br><br>
+
+<b>That All For Now.Now click on Start Quiz Button and test your skills.</b><br><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=black>Thank You <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Deepak Sharma)</font>
+
+</font></p>
+</marquee>
+</BODY>
+</HTML>
